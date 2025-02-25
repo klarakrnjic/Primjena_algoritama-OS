@@ -1,17 +1,6 @@
-# Ulazni podaci
-N = int(input("Unesi početni broj dragulja: "))
+N = int(input().strip())
+for _ in range(4):
+    dragulji = N // 4  # Izračunaj dragulje koje gusar uzima
+    print(dragulji)   # Ispiši rezultat
+    N -= dragulji     # Ažuriraj preostali broj dragulja za sljedećeg gusara
 
-# Izračunavanje broja dragulja za svakog gusara
-prvi = N // 4
-N -= prvi
-drugi = N // 4
-N -= drugi
-treći = N // 4
-N -= treći
-četvrti = N // 4
-
-# Ispis rezultata
-print(prvi)
-print(drugi)
-print(treći)
-print(četvrti)
